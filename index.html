@@ -111,7 +111,7 @@
 <body>
 
 <h1>student portal</h1>
-<h2>shout out to Jake Tomkins 🔥🔥🔥</h2>
+<h2 id="motd">shout out to Jake Tomkins 🔥🔥🔥</h2>
 
 <table>
   <tbody>
@@ -178,5 +178,38 @@
   </tbody>
 </table>
 
+
+<script>
+	const randomMessages = ["shout out to Jake Tomkins 🔥🔥🔥", 
+    "shout out to Jake Tomkins 🔥🔥🔥",
+	"shout out to Jake Tomkins 🔥🔥🔥",
+	"shout out to Jake Tomkins 🔥🔥🔥",
+	"shout out to Jake Tomkins 🔥🔥🔥",
+	"shout out to Jake Tomkins 🔥🔥🔥",
+	"shout out to Jake Tomkins 🔥🔥🔥",
+	"shout out to Jake Tomkins 🔥🔥🔥",
+	"shout out to Jake Tomkins 🔥🔥🔥",
+	"shout out to Jake Tomkins 🔥🔥🔥",
+	"shout out to Jake Tomkins 🔥🔥🔥",
+	"shout out to Jake Tomkins 🔥🔥🔥",
+	"shout out to Jake Tomkins 🔥🔥🔥",
+	"shout out to Jake Tomkins 🔥🔥🔥",
+	"shout out to Jake Tomkins 🔥🔥🔥",
+	"shout out to Jake Tomkins 🔥🔥🔥",
+	"shout out to Jake Tomkins 🔥🔥🔥",
+	"shout out to Seth Wegrzyn 🔥🔥🔥",
+	"shout out to Aidan Newling 🔥🔥🔥"]
+	
+	const randomText = document.getElementById('motd');
+
+	let messageOfTheDay = Math.floor(Math.random() * randomMessages.length)
+	console.log(messageOfTheDay)
+	randomText.textContent = randomMessages[messageOfTheDay]
+
+</script>
+
 </body>
+
+
+
 </html>
