@@ -151,7 +151,7 @@
       	<td><a target="_blank" href="#"><img src="suggestion.png" alt=""></a></td>
 		<td><a target="_blank" href="#"><img src="suggestion.png" alt=""></a></td>
 		<td><a target="_blank" href="#"><img src="suggestion.png" alt=""></a></td>
-      	<td><a target="_blank" href="mailto:acrosweller27@student.sacs.nsw.edu.au"><img src="asher c.png" alt=""></a></td>
+      	<td id="actg"></td>
     </tr>
 
     <!-- Row 3 -->
@@ -217,7 +217,21 @@
 	let messageOfTheDay = Math.floor(Math.random() * randomMessages.length)
 	console.log(messageOfTheDay)
 	randomText.textContent = randomMessages[messageOfTheDay]
-
+	
+	const actg = document.getElementById("actg");
+	
+	const actg_options = [
+	'<a target="_blank" href="mailto:acrosweller27@student.sacs.nsw.edu.au"><img src="asher c.png" alt=""></a>',
+	'<a target="_blank" href="mailto:alane27@student.sacs.nsw.edu.au"><img src="lane.png" alt=""></a>',
+	'<a target="_blank" href="mailto:abutler27@student.sacs.nsw.edu.au"><img src="andrew.png" alt=""></a>',
+	'<a target="_blank" href="mailto:dswain27@student.sacs.nsw.edu.au"><img src="swain.png" alt=""></a>',
+	'<a target="_blank" href="mailto:anewling27@student.sacs.nsw.edu.au"><img src="calving.png" alt=""></a>'
+	];
+	
+	let actg_input = Math.floor(Math.random() * actg_options.length);
+	actg.innerHTML = actg_options[actg_input];
+	
+	
 </script>
 
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "05625906c1cb4c8fa1f1e67b27e47ba4"}'></script><!-- End Cloudflare Web Analytics -->
