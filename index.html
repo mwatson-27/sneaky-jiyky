@@ -14,7 +14,11 @@
   <title>jtportal</title>
   <style>
 	
-	
+	@keyframes john {
+		  from {left: -200%; opacity: 100%;}
+		  to {left: 200%%; opacity: 100%;}
+		}
+		
 	@media screen and (min-width: 700px) {
 		h1 {
 			width: 95%;
@@ -32,6 +36,7 @@
 			font-size:40px;
 			background-color: black;
 			color:white;
+			
 		}
 		
 		table {
@@ -109,6 +114,12 @@
 	td:hover {
 		opacity: 0.5;
 	}
+	
+	#motd {
+		animation-name: john;
+		animation-duration: 4s;
+		animation-iteration-count: infinite;
+	}
   </style>
 </head>
 <body>
@@ -135,7 +146,7 @@
       	<td><a target="_blank" href="https://www.britannica.com/"><img src="birtannica.png" alt=""></a></td>
 	  	<td><a target="_blank" href="https://standrewscs.sharepoint.com/sites/student/SitePages/OnCampus.aspx"><img src="offcampus.png" alt=""></a></td>
 	  	<td><a target="_blank" href="#"><img src="suggestion.png" alt=""></a></td>
-		<td><a target="_blank" href="https://brasurf.com.au/cam/bondi"><img src="fsh-spin.gif" alt=""></a></td>
+		<td><a target="_blank" href="https://brasurf.com.au/cam/bondi"><img src="fsh.gif" alt=""></a></td>
     </tr>
 
     <!-- Row 2 -->
@@ -209,7 +220,7 @@
 	const actg = document.getElementById("actg");
 	
 	const actg_options = [
-	...Array(120).fill('<a target="_blank" href="mailto:acrosweller27@student.sacs.nsw.edu.au"><img src="asher c.png" alt=""></a>'),
+	...Array(20).fill('<a target="_blank" href="mailto:acrosweller27@student.sacs.nsw.edu.au"><img src="asher c.png" alt=""></a>'),
 	'<a target="_blank" href="mailto:alane27@student.sacs.nsw.edu.au"><img src="lane.png" alt=""></a>',
 	'<a target="_blank" href="mailto:abutler27@student.sacs.nsw.edu.au"><img src="andrew.png" alt=""></a>',
 	'<a target="_blank" href="mailto:dswain27@student.sacs.nsw.edu.au"><img src="swain.png" alt=""></a>',
